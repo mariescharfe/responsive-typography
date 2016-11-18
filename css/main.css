@@ -12,6 +12,8 @@ html {
   text-size-adjust: 100%;
 
   color: #222;
+  font-family: 'Crimson Text', serif;
+  line-height: 1.3;
 }
 
 *, *::before, *::after {
@@ -20,47 +22,91 @@ html {
 
 article {
   max-width: 43em;
+  padding: .5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+article p {
+  line-height: 1.3;
+}
+
+ol + p {
+  padding-top: .4rem;
+  padding-bottom: 1.2rem;
+  margin-bottom: .25rem;
+}
+
+body {
+  margin: 0;
 }
 
 article h1 {
   font-weight: normal;
+  margin: 0;
+  padding-bottom: .025rem;
 }
 
 article header {
   border-bottom: 1px solid #999;
 }
 
+header + p {
+  padding-top: .3rem;
+}
+
 article header p {
   font-style: italic;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+article ol {
+  margin-left: -1.5rem;
+  padding-top: .3rem;
 }
 
 article > p:last-child {
   border-bottom: 1px solid #999;
 }
 
+article p:nth-child(3),
+article p:nth-child(4),
+article p:nth-child(5),
+article p:nth-child(6) {
+  padding-top: .3rem;
+}
+
 blockquote {
   max-width: 24em;
   color: #555;
   font-size: 1.125rem;
+  margin: auto;
+  margin-top: .025rem;
 }
 
 .quote {
   color: #999;
 }
 
-@media only screen and (min-width: 25em) {
-
-
-
+.quote:first-child {
+  margin-left: -.4rem;
 }
 
 @media only screen and (min-width: 38em) {
 
 
-  
+
 }
 
 @media only screen and (min-width: 60em) {
+
+
+
+}
+
+@media only screen and (min-width: 90em) {
 
 
 
